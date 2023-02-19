@@ -1,2 +1,5 @@
 # C++
-C++ with CMake
+Requirements:
+CMake
+Visual Studio Code
+VS Code Extensions : C/C++, CMake, CMake Tools
