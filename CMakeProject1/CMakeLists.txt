@@ -7,9 +7,9 @@ file(GLOB SOURCES "src/*.cpp")
 
 add_executable(CMakeProject1 ${SOURCES})
 
-include(CTest)
+#include(CTest)
 #enable_testing()
 
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)
+#set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+#set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+#include(CPack)
