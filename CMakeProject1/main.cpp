@@ -20,7 +20,7 @@ class Animal{
             return age;
         }
 
-        // Pure virtual needs to be overwritten
+        // Pure virtual needs to overwrite
         virtual void PrintInfo() = 0;
 };
 
