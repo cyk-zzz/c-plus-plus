@@ -2,7 +2,10 @@ cmake_minimum_required(VERSION 3.0.0)
 
 project(CMakeProject1 VERSION 0.1.0)
 
-add_executable(CMakeProject1 main.cpp)
+#set(SOURCES Animal.cpp)
+file(GLOB SOURCES "src/*.cpp")
+
+add_executable(CMakeProject1 main.cpp ${SOURCES})
 
 include(CTest)
 enable_testing()
