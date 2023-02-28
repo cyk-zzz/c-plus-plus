@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "Dog.h"
+#include "Dog.hpp"
 
 using namespace std;
 
