@@ -1,11 +1,19 @@
-cmake_minimum_required(VERSION 3.0.0)
+cmake_minimum_required(VERSION 3.1)
 
-project(CMakeProject1 VERSION 0.1.0)
+if(${CMAKE_VERSION} VERSION_LESS 3.12)
+    cmake_policy(VERSION ${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION})
+endif()
+
+project(
+    CMakeProject1 
+    VERSION 1.0.0
+    DESCRIPTION "Test CMake Lah"
+    LANGUAGES CXX)
 
 include_directories(header)
 file(GLOB SOURCES "src/*.cpp")
 
-add_executable(CMakeProject1 ${SOURCES})
+add_executable(RunMe ${SOURCES})
 
 #include(CTest)
 #enable_testing()
